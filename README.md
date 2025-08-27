@@ -1,28 +1,28 @@
-# 🧪 Learning Lab
+# 🧪 Learning Log
 
 Welcome to my living log.  
 This repository is my practice space where I document what I’m currently learning in web and mobile development.  
-It’s not a polished portfolio — it’s a **lab** where I experiment with technologies, workflows, and books.  
+It’s not a polished portfolio — it’s a **lab** where I experiment with technologies, workflows, and books.
+
+## 📊 Lab Status
+
+![last commit](https://img.shields.io/github/last-commit/Eliasusu/Learning-log)  
+![learning javascript](https://img.shields.io/badge/status-learning-blue)
 
 ---
 
 ## 🔥 Currently Learning
-- [ ] JavaScript
+
+- [x] JavaScript
 - [ ] TypeScript
 - [ ] React and React Native
 - [ ] Next.js
 - [ ] Test Driven Development with Jest
 
-## 🎥 Latest Video Watched
-
-<p> Test Driven Development: The best way to code that I almost never use <p>
-<a href="https://www.youtube.com/watch?v=EH9Suo_J4Ks">
-  <img src="https://img.youtube.com/vi/EH9Suo_J4Ks/0.jpg" width="400">
-</a>
-
 ---
 
 ## ✅ Already Explored
+
 - [ ] JavaScript
 - [ ] TypeScript
 - [ ] Node.js + Express
@@ -32,36 +32,37 @@ It’s not a polished portfolio — it’s a **lab** where I experiment with tec
 ---
 
 ## 🧭 Roadmap
-I'm looking for ideas haha
+
+I'm looking for some projects...
 
 ---
 
 ## 📂 Lab Structure
-- [`/notes`](./notes) → Notes and summaries of key concepts.  
-- [`/projects`](./projects) → Exercises, and mini-projects.  
-- [`/books`](./books) → Summaries and notes from books I’m reading.  
-- [`/resources`](./resources) → External materials (videos, articles, courses).  
+
+- [`/notes`](./notes) → Notes and summaries of key concepts.
+- [`/projects`](./projects) → Code of mini-projects
+- [`/resources`](./resources) → External materials (videos, articles, courses).
+- [`/learning`](./learning/) → Lessons and exercises of TS, JS and Jest
 
 ---
 
 ## 📚 Books and Resources
-- [ ] *The Pragmatic Programmer* - Andrew Hunt and David Thomas (Reading 📖)
-- [ ] *A Philosophy of Software Design* - John Ousterhout (To read 🕐)
-- [ ] *Refactoring* - Martin Fowler (To read 🕐)
-- [ ] *Eloquent Javascript* - Marijn Haverbeke (To read 🕐)
+
+- [ ] _The Pragmatic Programmer_ - Andrew Hunt and David Thomas (Reading 📖)
+- [ ] _A Philosophy of Software Design_ - John Ousterhout (To read 🕐)
+- [ ] _Refactoring_ - Martin Fowler (To read 🕐)
+- [ ] _Eloquent Javascript_ - Marijn Haverbeke (To read 🕐)
 
 ---
 
 ## 🧪 Gitflow
+
 This repository is also my playground for practicing **Gitflow**.  
-Branches I use:  
-- `main` → stable and production-ready   
-- `develop` → continuous integration of features  
-- `feature/*` → new practices or projects  
-- `release/*` → preparing a stable version  
+Branches I use:
+
+- `main` → stable and production-ready
+- `develop` → continuous integration of features
+- `feature/*` → new practices or projects
+- `release/*` → preparing a stable version
 
 ---
-
-## 📊 Lab Status
-![last commit](https://img.shields.io/github/last-commit/Eliasusu/Learning-lab)  
-![learning](https://img.shields.io/badge/status-learning-blue)
