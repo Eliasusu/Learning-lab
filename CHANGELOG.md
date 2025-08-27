@@ -27,3 +27,14 @@ All notable updates to my learning journey will be documented here.
 ### Deleted
 
 - Deleted the section 'books'
+
+---
+
+## [v0.2.1] – 2025-08-27
+
+### Added
+
+- Added files 'jest' ,and 'typescript-javascript'
+- Added initial learning of javascript arrays
+
+---
