@@ -7,5 +7,7 @@ Current topics:
 
 - JavaScript basics
 - TypeScript essentials
-- Node.js + Express fundamental
-- Jest for Test Driven Development
+- Node.js + Express fundamentals
+- React
+- Next.js
+- Jest
