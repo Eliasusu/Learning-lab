@@ -123,4 +123,162 @@ Console logs
 */
 ```
 
-[I'm here in the playlist Javascript Made Easy - Jack Herrington](https://youtu.be/XYq9QpgAx8g?list=PLNqp92_EXZBJmAHWnJbVnXsl71hiHCrQh&t=295)
+## Map and Flat
+
+### Mapping over objects
+
+One of the cases that I code while I was see the [video](https://youtu.be/k42kEU2izKc?list=PLNqp92_EXZBJmAHWnJbVnXsl71hiHCrQh&t=350) it was:
+
+If I have an array of objects and inside of one object I've another object, this object is a reference. So if I copy the entire array, these object is a reference and can be mutated. On the other hand, the original object with yours "atomic" properties are copy in other part of the memory and it can be mutated. For instance:
+
+```js
+const people = [
+  {
+    firstName: "Jonh",
+    lastName: "Dutton",
+    address: { city: "Montana" },
+    age: 45,
+  },
+  {
+    firstName: "Kayce",
+    lastName: "Dutton",
+    address: { city: "Montana" },
+    age: 30,
+  },
+  {
+    firstName: "Beth",
+    lastName: "Dutton",
+    address: { city: "Montana" },
+    age: 25,
+  },
+];
+
+const fullNames = people.map((p) => ({
+  ...p,
+  fullName: `${p.firstName} ${p.lastName}`,
+}));
+
+console.log(fullNames);
+
+fullNames[0].firstName = "Lee";
+console.log(fullNames);
+
+fullNames[0].address.city = "Below Montana :(";
+console.log(fullNames);
+console.log(people);
+
+/*
+console logs:
+  [{
+    firstName: 'Jonh',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 45,
+    fullName: 'Jonh Dutton'
+  },
+  {
+    firstName: 'Kayce',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 30,
+    fullName: 'Kayce Dutton'
+  },
+  {
+    firstName: 'Beth',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 25,
+    fullName: 'Beth Dutton'
+  }
+]
+
+Mutted a "atomic" property
+[
+  {
+    firstName: 'Lee', <-!--
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 45,
+    fullName: 'Jonh Dutton' <- Here not mutated
+  },
+  {
+    firstName: 'Kayce',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 30,
+    fullName: 'Kayce Dutton'
+  },
+  {
+    firstName: 'Beth',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 25,
+    fullName: 'Beth Dutton'
+  }
+]
+
+// And with the object address inside the original object
+[
+  {
+    firstName: 'Lee',
+    lastName: 'Dutton',
+    address: { city: 'Below Montana :(' },
+    age: 45,
+    fullName: 'Jonh Dutton'
+  },
+  {
+    firstName: 'Kayce',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 30,
+    fullName: 'Kayce Dutton'
+  },
+  {
+    firstName: 'Beth',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 25,
+    fullName: 'Beth Dutton'
+  }
+]
+[
+  {
+    firstName: 'Jonh',
+    lastName: 'Dutton',
+    address: { city: 'Below Montana :(' },
+    age: 45
+  },
+  {
+    firstName: 'Kayce',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 30
+  },
+  {
+    firstName: 'Beth',
+    lastName: 'Dutton',
+    address: { city: 'Montana' },
+    age: 25
+  }
+]
+
+```
+
+To avoid this, I should do a 'cheap copy'
+
+```js
+const cheapClone = (obj) => JSON.parse(JSON.stringify(obj));
+```
+
+And then use it for the array fullNames
+
+```js
+const fullNames = people.map((p) =>
+  cheapClone({
+    ...p,
+    fullName: `${p.firstName} ${p.lastName}`,
+  })
+);
+```
+
+[I'm here in the playlist Javascript Made Easy - Jack Herrington](https://youtu.be/k42kEU2izKc?list=PLNqp92_EXZBJmAHWnJbVnXsl71hiHCrQh&t=328)
