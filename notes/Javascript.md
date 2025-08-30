@@ -4,6 +4,8 @@
 
 - [Iterators](#iterators)
 - [Indexing and Finding](#indexing-and-findind)
+- [Map and Flat](#map-and-flat)
+- [Reduce](#reduce)
 
 ## Iterators
 
@@ -124,6 +126,8 @@ Console logs
 ```
 
 ## Map and Flat
+
+- [learning/typescript-javascript/src/Javascript-Made-Easy/map-flat](https://github.com/Eliasusu/Learning-lab/blob/342f548208ab9e5b44ea08e7b5491f7990be1e15/learning/typescript-javascript/src/Javascript-Made-Easy/map-flat)
 
 ### Mapping over objects
 
@@ -280,5 +284,45 @@ const fullNames = people.map((p) =>
   })
 );
 ```
+
+## Reduce
+
+- [learning/typescript-javascript/src/Javascript-Made-Easy/reduce](https://github.com/Eliasusu/Learning-lab/blob/feature/learning-javascript-arrays/learning/typescript-javascript/src/Javascript-Made-Easy/reduce)
+
+### Reduce to value
+
+Another array method is reduce, this method is an iterative method that reduce an array.
+To do that, reduce uses a callback function on each element of the array with the objective to return a single value. Like a simple for with an acummulate but it have a reducer callback
+
+```js
+const array = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+console.log(sumWithInitial);
+// Expected output: 10
+```
+
+### Reduce the mother of the other methods
+
+The final learning is that reduce can reproduce each method, like map, filter, slice, flat, include, etc.
+
+So I don't going write more examples of reduce, just the structure to use in the future.
+
+```js
+reduce(callbackFn);
+reduce(callbackFn, initialValue);
+```
+
+Normally the callback function is compose with an accumulator, a current value, a current index and the array that called reduce().
+
+And the inital value is where the reduce() put the final result
+
+I bring this information in [MDN Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce#initialvalue)
 
 [I'm here in the playlist Javascript Made Easy - Jack Herrington](https://youtu.be/k42kEU2izKc?list=PLNqp92_EXZBJmAHWnJbVnXsl71hiHCrQh&t=328)
