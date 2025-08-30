@@ -9,7 +9,7 @@
 
 ## Iterators
 
-- [./projects/src/Javascript-Made-Easy/Iterators](https://github.com/Eliasusu/Learning-lab/blob/main/projects/src/Javascript-Made-Easy/Iterators)
+- [./projects/src/Javascript-Made-Easy/Iterators](https://github.com/Eliasusu/Learning-lab/blob/cf9495dd3a165c94a33a659024d121d99c83a265/learning/typescript-javascript/src/Javascript-Made-Easy/Iterators)
 
 ### The sentence `for()`
 
@@ -63,7 +63,7 @@ arrayOfNumbers.forEach((value, index) => {
 
 ## Indexing and Findind
 
-- [./projects/src/Javascript-Made-Easy/indexing-and-finding](https://github.com/Eliasusu/Learning-lab/blob/main/projects/src/Javascript-Made-Easy/indexing-and-finding/copies.js)
+- [./projects/src/Javascript-Made-Easy/indexing-and-finding](https://github.com/Eliasusu/Learning-lab/blob/cf9495dd3a165c94a33a659024d121d99c83a265/learning/typescript-javascript/src/Javascript-Made-Easy/indexing-and-finding)
 
 ### Scalars and References
 
@@ -196,7 +196,7 @@ console logs:
   }
 ]
 
-Mutted a "atomic" property
+Mutate an "atomic" property
 [
   {
     firstName: 'Lee', <-!--
