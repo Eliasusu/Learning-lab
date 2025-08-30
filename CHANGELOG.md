@@ -2,6 +2,13 @@
 
 All notable updates to my learning journey will be documented here.
 
+## [v0.3.0] - 2025-08-30 (HOTFIX)
+
+### Added
+
+-- Added the checklist times to Already Explored for Javascript
+-- Added proyects in the readme roadmap
+
 ## [v0.3.0] - 2025-08-30
 
 ### Added

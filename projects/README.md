@@ -8,6 +8,5 @@ Examples planned:
 - Todo App with Vanilla JS
 - Kanban box with Vanilla JS
 - REST API with Node.js + Express
-- Instagram clone (React Native)
-- Blog platform (Next.js)
-- Mini fullstack project
+- Spotify clone (React Native)
+- Mini fullstack project (Next.js)

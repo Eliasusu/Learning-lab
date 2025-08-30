@@ -23,7 +23,7 @@ It’s not a polished portfolio — it’s a **lab** where I experiment with tec
 
 ## ✅ Already Explored
 
-- [ ] JavaScript
+- [x] JavaScript
 - [ ] TypeScript
 - [ ] Node.js + Express
 - [ ] Databases (SQL / NoSQL)
@@ -33,7 +33,11 @@ It’s not a polished portfolio — it’s a **lab** where I experiment with tec
 
 ## 🧭 Roadmap
 
-I'm looking for some projects...
+- Todo App with Vanilla JS
+- Kanban box with Vanilla JS
+- REST API with Node.js + Express
+- Spotify clone (React Native)
+- Mini fullstack project (Next.js)
 
 ---
 
